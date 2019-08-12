@@ -6,6 +6,11 @@ var app = express();
 app.get('/', function (req, res) {
  res.send('hello world');
 });
+
+app.get('/hola', function (req, res) {
+    res.send('bienvenido amigo a world');
+   });
+
 //listen to port 3000 by default
 app.listen(process.env.PORT || 3000);
  
